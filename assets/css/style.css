@@ -1,0 +1,114 @@
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+label {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.jumbotron {
+    background-color:#404040;
+    color: white;
+}
+
+.search-card {
+    background-color: rgb(85, 82, 82);
+    width: 330px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px
+    
+}
+
+.search-button {
+    background-color: blue;
+    color: white;
+    width: 292px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    width: 292px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px
+}
+
+.weather {
+    
+    width: 850px;
+    float: right;
+}
+
+.five-day-forecast {
+    
+    align-items: center;
+}
+
+.weather .forecast {
+    color: black;
+    background-color: rgb(85, 82, 82);
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.weather .five-day {
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-around;
+    background-color: rgb(201, 201, 201);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px solid black;
+}
+
+.weather .five-day .daily0 {
+    display: inline-block;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.weather .five-day .daily1 {
+    display: inline-block;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.weather .five-day .daily2 {
+    display: inline-block;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.weather .five-day .daily3 {
+    display: inline-block;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.weather .five-day .daily4 {
+    display: inline-block;
+    width: 150px;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}

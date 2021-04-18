@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />   
+
+    <title>Weather Dashboard</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <!--Jumbotron for Title-->
+    <header class="jumbotron container-fluid mt-2 text-center p-2">
+        <h1> <strong>Weather Dashboard</strong></h1>
+    </header>
+
+
+    <section class="search-card">
+      <form id="search-cities" class="search-form">
+        <label for="search-label">Search by City:</label>
+        <input type="text" id="city" class="search-bar"/>
+        <button id="city-search" class="search-button"><i class="fas fa-search-location"></i></button>
+        <button id="city-delete" class="delete-button"><i class="far fa-trash-alt"></i></button>     
+      </form>
+      
+      <!--DISPLAY SEARCH HISTORY-->
+      <div id="seach-history" class="card-body">
+
+      </div>
+    </section><!--END SEARCH CARD-->
+
+    <!-- WEATHER SECTION -->
+    <section id="weather-card" class="weather">
+      
+      <!-- TODAY'S WEATHER -->
+      <div id="current-forecast" class="forecast">
+        <p>City: <span id="cityName"></span></p>
+        <p id="currentDay"></p> 
+        <div id="icon0"><img id="wicon" src="" alt="Weather icon"></div>       
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Windspeed: <span id="windspeed"></span></p>
+        <p>UV Index: <span id="uvindex"></span></p>
+      </div>
+
+
+      <h3>Five Day Forecast</h3>
+      <div id="five-day-forecast" class="five-day">
+        <div class="daily0">
+          <p><span id="date0"></span></p>
+          <div id="icon0"><img id="wicon0" src="" alt="Weather icon"></div>
+          <p><span id="main0"></span></p>
+          <p>Temperature: <span id="temperature0"></span></p>
+          <p>Humidity: <span id="humidity0"></span></p>
+        </div>
+
+        <div class="daily1">
+          <p><span id="date1"></span></p>
+          <div id="icon0"><img id="wicon1" src="" alt="Weather icon"></div>
+          <p><span id="main1"></span></p>
+          <p>Temperature: <span id="temperature1"></span></p>
+          <p>Humidity: <span id="humidity1"></span></p>
+        </div>
+
+        <div class="daily2">
+          <p><span id="date2"></span></p>
+          <div id="icon0"><img id="wicon2" src="" alt="Weather icon"></div>
+          <p><span id="main2"></span></p>
+          <p>Temperature: <span id="temperature2"></span></p>
+          <p>Humidity: <span id="humidity2"></span></p>
+        </div>
+
+        <div class="daily3">
+          <p><span id="date3"></span></p>
+          <div id="icon0"><img id="wicon3" src="" alt="Weather icon"></div>
+          <p><span id="main3"></span></p>
+          <p>Temperature: <span id="temperature3"></span></p>
+          <p>Humidity: <span id="humidity3"></span></p>
+        </div>
+
+        <div class="daily4">
+          <p><span id="date4"></span></p>
+          <div id="icon0"><img id="wicon4" src="" alt="Weather icon"></div>
+          <p><span id="main4"></span></p>
+          <p>Temperature: <span id="temperature4"></span></p>
+          <p>Humidity: <span id="humidity4"></span></p>
+        </div>
+
+    </section><!--END RESULTS CARD-->
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
